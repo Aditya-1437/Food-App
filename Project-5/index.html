@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index/Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="cssFiles/style.css">
+</head>
+<body>
+    <header class="container py-1 px-5 mt-3 mb-3 head">
+        <h2><span>F</span>oo<span>D</span>ie</h2>
+        <nav class="navigate">
+            <a class="active" href="Home.html">Home</a>
+            <a href="Menu.html">MenuChart</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <div class="mobile-menu" onclick="toggleMenu()">
+            <div class="hamburgur">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navigate2">
+                <a class="active" href="Home.html">Home</a>
+                <a href="Menu.html">MenuChart</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </div>
+        <a class="reg" href="Registration.html">Register</a>
+    </header>
+
+    <section class="container hero">
+        <div class="hero-content">
+            <h1>Never let <span>HUNGER</span> decide your <span>MOOD</span></h1>
+            <p>Become a <span>FooDie</span> and <span class="sp1">HUNT</span> the <span>HUNGER</span></p>
+            <div class="member">
+                <p>Become a Member </p>
+                <button type="button" onclick="member()">Take Membership</button>
+            </div>
+            <div class="review">
+                <p>100K+ Members Till Now</p>
+                <p>Highly recomended food ordering browser</p>
+                <p>4.5 star rating</p>
+                <p>Trusted</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="locality d-flex align-items-center justify-content-center">
+        <div class="container d-flex align-items-center justify-content-center gap-5">
+            <select name="area" id="area">
+                <option value="default">Location</option>
+                <option value="VSP">Visakhapatnam</option>
+                <option value="BZA">Vijayawada</option>
+                <option value="VZM">Vijayanagaram</option>
+                <option value="SKL">Srikakulam</option>
+                <option value="EGD">East Godavari</option>
+                <option value="WGD">West Godavari</option>
+                <option value="CHT">Chitoor</option>
+            </select>
+            <p><span>|</span></p>
+            <p>Select your location to access Restaurants nearby.</p>
+        </div>
+    </section>
+
+    <!-- <section class="footer">&copy; FooDie App Limited</section> -->
+    <footer class="container pt-4 my-md-5 pt-md-5 border-top bg-light px-5 rounded-4">
+        <div class="row">
+          <div class="col-12 col-md">
+            <h1 class="text-dark fs-1">FooDie</h1>
+            <small class="d-block mb-3 text-light-emphasis">© 2017–2024</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Navigate</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Home</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">About</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Contact</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Your Account</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Follow Us On...</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Twitter</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Instagram</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Youtube</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Facebook</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Our Blogs</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    <script src="Scripts/HomeScript.js"></script>
+</body>
+</html>

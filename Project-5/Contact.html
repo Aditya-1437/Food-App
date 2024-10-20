@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index/Contact Page</title>
+    <link rel="stylesheet" href="./cssFiles/contactstyle.css">
+</head>
+<body>
+    <header class="head">
+        <h2><span>F</span>oo<span>D</span>ie</h2>
+        <nav class="navigate">
+            <a href="Home.html">Home</a>
+            <a href="Menu.html">MenuChart</a>
+            <a href="About.html">About</a>
+            <a class="active" href="Contact.html">Contact</a>
+        </nav>
+        <a class="reg" href="Registration.html">Register</a>
+    </header>
+    <section class="cnt">
+        <h2>Contact Us for More Info...</h2>
+        <div class="container">
+            <div class="detail">
+                <h3>Our contact info</h3>
+                <p>Email : customercare@foodie.com</p>
+                <p>Mobile : +11 2344356</p>
+                <p>Location : Park Avenue, Indos</p>
+            </div>
+            <div class="info">
+                <form action="Home.html" onsubmit="return feedbackForm()" name="contactform">
+                    <h3>Share Your Feedback / Complaint</h3>
+                    <input type="email" placeholder="Your Mail here" name="email">
+                    <input type="text" placeholder="Your Full Name" name="name">
+                    <textarea name="text1" id="" placeholder="Message"></textarea>
+                    <button type="submit" class="btn">SEND</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="app">
+        <div class="app-container">
+            <h2>Download our FooDie app for best experience</h2>
+            <button>Get App from PlayStore</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; FooDie App Limited</p>
+    </footer>
+
+    <script src="./Scripts/ContactScripts.js"></script>
+</body>
+</html>

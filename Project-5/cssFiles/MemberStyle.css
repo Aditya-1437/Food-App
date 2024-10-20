@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+body{
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: crimson;
+
+}
+.head{
+    background-color: aliceblue;
+    padding: 5px 50px;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+
+    h2{
+        margin: 0;
+        font-size: 24px;
+
+        span{
+            color: crimson;
+        }
+    }
+
+    .navigate{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        a{
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-left: 50px;
+            color: olivedrab;
+
+            &:hover{
+                text-decoration: underline;
+            }
+
+            &.active{
+                text-decoration: underline;
+                color: firebrick;
+            }
+        }
+    }
+    .reg{
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        font-weight: 700;
+        border-bottom: 2px solid crimson;
+        border-top: 2px solid olivedrab;
+        padding: 10px;
+        border-radius: 25px;
+        color: crimson;
+        &:hover{
+            background: linear-gradient(olivedrab,crimson);
+            color: aliceblue;
+        }
+    }
+}
+
+.container{
+    .pricing-header{
+        h1{
+            color: #fff;
+        }
+    }
+}

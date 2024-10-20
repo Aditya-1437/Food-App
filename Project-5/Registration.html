@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index/Register</title>
+    <link rel="stylesheet" href="./cssFiles/registerstyle.css">
+</head>
+<body>
+    <header class="head">
+        <h2><span>F</span>oo<span>D</span>ie</h2>
+        <nav class="navigate">
+            <a href="Home.html">Home</a>
+            <a href="Menu.html">MenuChart</a>
+            <a href="About.html">About</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <!-- <a class="reg" href="Registration.html">Register</a> -->
+    </header>
+    <div class="register-container">
+        <div class="register">
+            <button type="button" onclick="toHome()" class="home">Home</button>
+            <h1>Register to <span>F</span>oo<span>D</span>ie</h1>
+            <form name="registerform" action="Login.html" onsubmit="return registerConfirm()">
+                <input type="text" name="username" placeholder="Full Name">
+                <input type="email" name="usermail" placeholder="E-Mail">
+                <input type="text" name="userpassword" placeholder="Password">
+                <input type="password" name="confirmpassword" placeholder="Re-Enter Password">
+                <div class="check"><input type="checkbox" name="check"> <p>I agree to the <span>Privacy Policy</span> and <span>Terms & Conditions</span> of FooDie.</p></div>
+                <input type="submit" value="Register" class="btn">
+            </form>
+            <p>Have an account already? <a href="Login.html"><span>Login Here...</span></a></p>
+        </div>
+    </div>
+
+    <script src="./Scripts/RegisterScript.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FooDie/Confirm Order</title>
+    <link rel="stylesheet" href="cssFiles/orderstyle.css">
+</head>
+<body>
+    <div class="order-container">
+        <button onclick="cancelOrder()">Cancel Order</button>
+        <h1><span>YAY!</span> Your Order is One click away...</h1>
+        <form action="Home.html"  onsubmit="return orderSubmit()">
+            <div class="r1">
+                <h3>Select your <span>Diet : </span> <select name="diet" id="diet">
+                    <option value="slt">--Select--</option>
+                    <option value="veg" style="color: green;">Vegiterian</option>
+                    <option value="nonveg" style="color: red;">Non-Vegiterian</option>
+                </select></h3>
+                <h3>Select your <span>Course : </span> <select onclick="check1()" name="course" id="crs">
+                    <option value="slt">--Select--</option>
+                    <option value="full">Complete Course</option>
+                    <option value="starter">Starter Only</option>
+                    <option value="main">Main Course Only</option>
+                    <option value="dessert">Dessert Only</option>
+                </select></h3>
+            </div>
+            <div class="r2">
+                <h3>Select your desired <span>Starter Dish : </span><select name="strter" id="str">
+                    <option value="slt">--Select--</option>
+                    <option value="none">No Starter</option>
+                    <option value="s1">Chilli Chicken</option>
+                    <option value="s2">Chicken Soup</option>
+                    <option value="s3">Chicken Burger</option>
+                    <option value="s4">Chicken Lollypop</option>
+                    <option value="s5">Chicken Drumsticks</option>
+                    <option value="s5">Chicken tandoori</option>
+                </select></h3>
+            </div>
+            <div class="r3">
+                <h3>Select your desired <span>Main Dish : </span><select name="main" id="mn">
+                    <option value="slt">--Select--</option>
+                    <option value="none">No Main Dish</option>
+                    <option value="m1">Chicken Fried Rice</option>
+                    <option value="m2">Chicken Biriyani</option>
+                    <option value="m3">Ckn.Dum Biriyani</option>
+                    <option value="m4">SPL. Chicken Biriyani</option>
+                    <option value="m5">Chicken Mughalai Biriyani</option>
+                    <option value="m6">Mutton Biriyani</option>
+                    <option value="m7">Prawn Biriyani</option>
+                    <option value="m8">Chicken Noodles</option>
+                    <option value="m9">Chicken Manchuriyan</option>
+                    <option value="m10">Fish Biriyani</option>
+                    <option value="m11">Chicken Gongura Curry</option>
+                    <option value="m12">Chicken Shezwanian Fried Rice</option>
+                </select></h3>
+            </div>
+            <div class="r4">
+                <h3>Select your desired <span>Dessert : </span> <select name="dessert" id="dsrt">
+                    <option value="slt">--Select--</option>
+                    <option value="none">No Dessert</option>
+                    <option value="d1">IceCream</option>
+                    <option value="d2">Scoop - Any</option>
+                    <option value="d3">Blue Lagoon</option>
+                    <option value="d4">Pastries</option>
+                    <option value="d5">Mocktails - Any</option>
+                </select></h3>
+            </div>
+            <div class="r5">
+                <h3>Choose your <span>Location : </span> <input type="text" value="India"></h3>
+            </div>
+            <div class="r6">
+                <button type="button" onclick="totBill()" class="calbtn">Calculate Bill</button>
+                <h3>PAY : <span id="pay"></span></h3>
+            </div>
+            <div class="r7">
+                <input type="submit" value="Place Your Order" class="submit-btn">
+            </div>
+        </form>
+    </div>
+
+
+    <script src="Scripts/orderScript.js"></script>
+    
+</body>
+</html>
